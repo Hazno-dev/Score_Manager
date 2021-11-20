@@ -36,12 +36,36 @@
         android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="GENRE #1"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="408dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:srcCompat="@android:drawable/screen_background_dark" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -269,9 +293,10 @@
                 android:id="@+id/scrollView5"
                 android:layout_width="408dp"
                 android:layout_height="103dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -283,11 +308,13 @@
                         android:orientation="horizontal">
 
                         <Button
+                            android:id="@+id/TestG1"
                             style="@style/Widget.AppCompat.Button.Colored"
                             android:layout_width="wrap_content"
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test Game 1"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -341,28 +368,5 @@
                 app:srcCompat="@android:drawable/screen_background_dark" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="10dp"
-        android:text="GENRE #1"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="408dp"
-        android:layout_height="4dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/screen_background_dark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
