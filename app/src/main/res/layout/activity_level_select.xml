@@ -106,6 +106,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
+        android:id="@+id/scrollView7"
         android:layout_width="match_parent"
         android:layout_height="433dp"
         android:layout_marginTop="5dp"
@@ -123,8 +124,8 @@
                 android:layout_height="130dp"
                 android:background="@drawable/my_button_bg"
                 android:insetTop="50dp"
-                android:text="Test Level 1"
                 android:onClick="L1Click"
+                android:text="Test Level 1"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:backgroundTint="#A84B04AF"
@@ -136,6 +137,7 @@
                 android:layout_height="130dp"
                 android:background="@drawable/my_button_bg"
                 android:insetTop="50dp"
+                android:onClick="L1Click"
                 android:text="Test Level 2"
                 android:textColor="#000000"
                 android:textSize="20sp"
@@ -148,28 +150,33 @@
                 android:layout_height="130dp"
                 android:background="@drawable/my_button_bg"
                 android:insetTop="50dp"
+                android:onClick="L1Click"
                 android:text="Test Level 3"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:backgroundTint="#3F51B5"
                 app:backgroundTintMode="add" />
+
             <Button
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:background="@drawable/my_button_bg"
                 android:insetTop="50dp"
+                android:onClick="L1Click"
                 android:text="Test Level 4"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:backgroundTint="#B14646"
                 app:backgroundTintMode="add" />
+
             <Button
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:background="@drawable/my_button_bg"
                 android:insetTop="50dp"
+                android:onClick="L1Click"
                 android:text="Test Level 5"
                 android:textColor="#000000"
                 android:textSize="20sp"
@@ -182,11 +189,24 @@
                 android:layout_height="130dp"
                 android:background="@drawable/my_button_bg"
                 android:insetTop="50dp"
+                android:onClick="L1Click"
                 android:text="Test Level 6"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:backgroundTint="#00BCD4"
                 app:backgroundTintMode="add" />
+
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="180dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

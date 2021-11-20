@@ -6,6 +6,7 @@ import android.util.Log;
 import android.widget.EditText;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,9 +23,19 @@ public class MainActivity extends AppCompatActivity {
         mUsernameF = (EditText)findViewById(R.id.UsernameField);
         mNameF = (EditText)findViewById(R.id.NameField);
         mEmailF = (EditText)findViewById(R.id.EmailField);
-        if (mUsernameF.getText().toString().equals("e")){
-            startActivity(intents);
-            //setContentView(R.layout.activity_game_list);
-        } else Log.d("MyTag", "not Succeeded");
+        if (mUsernameF.getText().toString().equals("") || mNameF.getText().toString().equals("") || mEmailF.getText().toString().equals("")){
+            Toast.makeText(this, "Fields are empty", Toast.LENGTH_SHORT).show();
+        } else if (mEmailF.getText().toString().contains("@"))startActivity(intents);
+        else Toast.makeText(this, "Email Invalid", Toast.LENGTH_SHORT).show();
+    }
+    public void RegisterClick(View view){
+        Intent intents = new Intent(this, GameList.class);
+        mUsernameF = (EditText)findViewById(R.id.UsernameField);
+        mNameF = (EditText)findViewById(R.id.NameField);
+        mEmailF = (EditText)findViewById(R.id.EmailField);
+        if (mUsernameF.getText().toString().equals("") || mNameF.getText().toString().equals("") || mEmailF.getText().toString().equals("")){
+            Toast.makeText(this, "Fields are empty", Toast.LENGTH_SHORT).show();
+        } else if (mEmailF.getText().toString().contains("@") && mEmailF.getText().toString().contains("."))startActivity(intents);
+        else Toast.makeText(this, "Email Invalid", Toast.LENGTH_SHORT).show();
     }
 }

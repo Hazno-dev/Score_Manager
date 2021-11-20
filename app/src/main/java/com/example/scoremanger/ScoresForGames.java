@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +34,14 @@ public class ScoresForGames extends AppCompatActivity {
         listviewer.setAdapter(adapters);
 
     }
+        EditText mNumberF;
     public void ListAdder(String Username, String Score){
         String complete = Username;
         list.add(complete + " - " + Score);
     }
     public void ConfirmScores(View view){
+        mNumberF = (EditText)findViewById(R.id.ScoreInput);
+        if (mNumberF.getText().toString().isEmpty()) Toast.makeText(this, "Fields are empty", Toast.LENGTH_SHORT).show();
 
     }
 }

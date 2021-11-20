@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".GameList">
 
+
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="244dp"
@@ -115,6 +117,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test Game 12"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -126,6 +129,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test Game 13"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -137,6 +141,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 14"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -148,6 +153,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 15"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -203,6 +209,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test Game 7"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -214,6 +221,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 9"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -225,10 +233,15 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 10"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
                             app:backgroundTintMode="add" />
+
+                        <com.google.android.material.bottomnavigation.BottomNavigationView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
                     </LinearLayout>
                 </HorizontalScrollView>
             </ScrollView>
@@ -269,6 +282,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test Game 5"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -280,6 +294,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 6"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -326,6 +341,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test Game 2"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -337,6 +353,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 3"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -348,6 +365,7 @@
                             android:layout_height="100dp"
                             android:background="@android:drawable/btn_star_big_on"
                             android:insetTop="50dp"
+                            android:onClick="g1Click"
                             android:text="Test game 4"
                             android:textColor="#000000"
                             app:backgroundTint="#9A9A9A"
@@ -368,5 +386,14 @@
                 app:srcCompat="@android:drawable/screen_background_dark" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="180dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/arrow_down_float" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
